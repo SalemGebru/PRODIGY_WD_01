@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(105deg, rgb(6, 131, 172),blue);
+    color:black;
+}
+
+.nav-bar{
+    width: 100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.562);
+    position:sticky;
+    top:0;
+    left:0;
+}
+
+.nav-bar h1{
+    font-size: 5em;
+    margin-left:30px;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    margin-right: 80px;
+}
+
+.nav-bar ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+.nav-bar ul li a::after{
+    height:2px;
+    width:0;
+    background:#0b0bc8;
+    display: block;
+    content:'';
+    transition: 0.5s;  
+}
+
+.nav-bar ul li a:hover::after{
+    width:100%;
+}
+
+.nav-bar::-webkit-scrollbar{
+    background-color: grey;
+}
+
+.nav-bar ul li a.clicked{
+    color:red;
+}
+
+.content{
+    text-align: center;
+    color:white;
+}
+
+.content h1{
+    padding-top:100px;
+    padding-bottom: 50px;
+    font-size: 4em;
+    font-family: cursive;
+}
+
+.content h3{
+  color:white;
+  font-size: 21px;
+}
+
+.content .trending{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.content .items{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content .items img{
+   width:100%;
+   height:300px;
+}
+
+.content .items p{
+    margin-top: 15px;
+}
+
+.content .items a{
+    color:bisque;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.userSearch{
+    width:100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.562);
+}
+
+.userSearch h3{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.userSearch .searchDiv{
+    margin: 10px auto;
+    width: 900px;
+}
+
+.userSearch input{
+    width:400px;
+    padding:10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.userSearch i{
+    position: relative; 
+}
+
+.contact{
+    width:50%;
+    margin: 100px auto;
+    background-color: white;
+    text-align: center;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input{
+    width:200px;
+    margin-top: 10px;
+    padding:3px 4px;
+}
+
+.contact form textarea{
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height:10vh;
+}
+
+.contact  #submit{
+    background-color: green;
+    color:white;
+    margin-bottom: 30px;
+    border-radius: 10px;  
+}
+
+.contact  #submit:hover{
+    background-color: rgb(158, 206, 158);
+    color:black;
+    font-weight: bold;
+    transition: 0.5s;
+}
