@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Copse",serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:white;
+}
+nav{
+    margin-left: 50%;
+    margin-right: 30px;
+    height:20vh; 
+    position: sticky;
+    top:0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    padding-top: 20px;
+    list-style:none;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 19px;
+    text-decoration: none;
+}
+nav ul li a::after{
+    content:'';
+    height:3px;
+    width: 0;
+    background-color: navy;
+    display: block;
+    transition: 0.3s ease-in;
+}
+nav ul li a:hover::after{
+   width:100%;
+}
+.sidebar{
+    top:0;
+    right: 0;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    background-color: antiquewhite;
+    box-shadow:-10px 0 10px rgba(0,0,0,0.1) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+.sidebar a{
+    color: black;
+}
+.pageTitle{
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.pageTitle .col{
+    width:40%;
+    margin-left: 15%;
+    text-align: center;
+    padding-top: 50px;
+}
+.pageTitle .col h1{
+    font-size: 5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pageTitle .col h1:hover{
+    color:navy;
+    transition: 0.2s ease-in-out;
+}
+.pageTitle .col p{
+    margin-top: 30px;
+    word-spacing: 2px;
+    font-size: 2rem;
+}
+.pageTitle img{
+    margin-right: 40px;
+}
+.sampleMusic{
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sampleMusic h2{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.sampleMusic p{
+    font-size: 25px;
+}
+.sampleMusic .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.sampleMusic .col{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+.sheet{
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 4px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding:15px 20px; 
+}
+#picture{
+    width:100%;
+    height:350px;
+    padding:10px;
+    margin-right: 20%;
+    border:6px solid gray;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px; 
+}
+ #music{
+    width:100%;
+    height:200px;
+}
+footer{
+    width:100%;
+    padding-top: 60px;
+    text-align: center;
+    background-color: white;
+    color:black;
+    height:40vh;
+}
+footer h2{
+    font-size: 2rem;
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:60%;
+    margin: 40px auto;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+}
+footer i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+footer a{
+    color:navy;
+}
+footer .fa-facebook:hover{
+    color:blue;
+}
+footer .fa-instagram:hover{
+    color:#E1306C;
+}
+footer .fa-linkedin:hover{
+    color:#0077B5;
+}
+footer .fa-whatsapp:hover{
+    color:green;
+}
+#browserPage {
+    text-align: center;  
+}
+#browserPage .browseSection{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+}
+#browserPage h1{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+}
+.browseSection .col{
+    flex:0 0 calc(33.33% - 30px);
+    display: flex;
+    flex-direction: column-reverse;
+    background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(''); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    align-items: center;
+    margin-bottom: 40px;
+    padding:7px;
+}
+.browseSection h2{
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.browseSection .col #picture{
+    width:300px;
+    height: 300px;
+}
+.browseSection p{
+    font-size: 20px;
+    padding-bottom: 10px; 
+}
+#artistsPage .cards{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 30px;
+}
+#artistsPage .cards .card{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px auto;
+    color:black;
+    border-radius: 10px;
+    width:80%;
+}
+#artistsPage .cards .card .text{
+    padding-left:15px;
+    flex:2;
+}
+#artistsPage .cards .card h1{
+   padding-bottom: 20px;
+   font-size: 1.5rem;
+}
+#artistsPage .cards .card p{
+    margin: 10px 0 10px 0;
+}
+#artistsPage .cards .card img{
+    width:300px;
+    height: 300px;
+    padding-right: 15px;
+    border-radius: 20%;
+}
+button{
+    padding:4px;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: navy;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+#contactsPage{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('piano.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+#contactsPage #title{
+    font-size: 5rem;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#contactsPage .contactPage{
+    width: 50%;
+    margin: 100px auto;
+    background-color: antiquewhite;
+    color: black;
+    text-align: center; 
+}
+
+#contactsPage .contactPage form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#contactsPage .contactPage form input{
+    padding: 7px;
+    margin: 15px;
+}
+#contactsPage .contactPage form textarea{
+    padding:4px 7px;
+    margin: 15px;
+}
+#contactsPage .contactPage form button{
+    width:15%;
+    margin:10px auto;
+    border-radius: 7px;
+    padding: 4px 6px;  
+}
+@media(max-width:768px){
+  nav{
+    width:15%;
+    margin-left:20px;
+    position: relative;
+  }
+  nav ul{
+    flex-direction: column; 
+   align-items: flex-start; 
+   padding: 10px;
+   position: relative;
+  }
+  .hide{
+    display: none;
+  }
+  .sidebar{
+    width: 30%;
+  }
+  .pageTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pageTitle img{
+    padding-left: 20px;
+    margin-top: 60px;
+  }
+  .sampleMusic .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .browseSection {
+    width: 70%;
+  }
+}
