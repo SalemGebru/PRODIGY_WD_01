@@ -150,6 +150,7 @@ footer .row{
     align-items: center;
     width:60%;
     margin: 40px auto;
+    background-color:white;
 }
 footer .col{
     display: flex;
