@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Responsive landing page</title>
+    </head>
+
+    <body>
+        <section id="browserPage">
+            <nav>
+              <ul class="sidebar">
+                <li onclick=hideSideBar() ><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="browse.html">BROWSE</a></li>
+                <li><a href="artistProfile.html">ARTIST PROFILES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+              </ul>
+
+              <ul class="mainbar">
+                <li class="hide"><a href="index.html">HOME</a></li>
+                <li class="hide"><a href="browse.html">BROWSE</a></li>
+                <li class="hide"><a href="artistProfile.html">ARTIST PROFILES</a></li>
+                <li class="hide"><a href="contact.html">CONTACT US</a></li>
+                <li onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+              </ul>
+            </nav>
+
+            <h1>Popular Streams</h1>
+            <div class="browseSection" >
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('vivaldijpg.jpg') ">
+                <audio controls>
+                  <source src="vivaldi-spring-allegro-185007.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>Spring Allegro</p>
+                <h2>Vivaldi Spring Allegro</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('chpoinpic.jpg') "> 
+                <audio controls>
+                  <source src="Lang_Lang_plays_Chopin_Etude_Op_10_No_3_in_E_Major.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>Lang Lang plays, Berlin Philharmonic</p>
+                <h2>Chopin_Etude_Op_10_</h2>  
+              </div>
+              
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('bach.jpg')" >
+                <audio controls>
+                  <source src="bach-violin-concerto-in-a-minor-3-movement-bwv-1041-183738.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>Violin concerto-in-a-minor-3-movement</p>
+                <h2>Bach-violin-concerto-in-a-minor-3-movement</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('beet.jpg') ">
+                <audio controls>
+                  <source src="fur-elise-beethoven-216331 (1).mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>fur-elise</p>
+                <h2>Beethoven-fur-elise</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('beet.jpg') ">
+                <audio controls>
+                  <source src="ludwig-fan-beethoven-aus-goethes-faust-classical-remix-8744.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>aus-goethes-faust-classical-remix</p>
+                <h2>Beethoven-aus-goethes-faust-classical-remix</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('mozart.jpg')" >
+                <audio controls>
+                  <source src="mozart-minuet-eine-kleine-nachtmusik-3rd-mov-classical-remix-7441.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>3rd-mov-classical-remix</p>
+                <h2>Mozart-minuet-eine-kleine-nachtmusik</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('tcha.jpg') ">
+                <audio controls>
+                  <source src="barcarolle-prelude-tschaikowsky-piano-the-seasons-jahreszeiten-7185.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>piano-the-seasons-jahreszeiten</p>
+                <h2>Tchaikowsky-barcarolle-prelude</h2>  
+              </div>
+
+              <div class="col" style="background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('mozart.jpg') ">
+                <audio controls>
+                  <source src="mozart-romanze-eine-kleine-nachtmusic-2nd-mov-classical-remix-7442.mp3" type="audio/mpeg" id="music">
+                </audio>
+                <p>2nd-mov-classical</p>
+                <h2>Mozart-romanze-eine-kleine-nachtmusic</h2>  
+              </div>
+
+              
+
+            <footer>
+              <h2>FOLLOW US</h2>
+              <div class="row">
+                <div class="col">
+                  <i class="fa-brands fa-facebook"></i>
+                  <a href="https://web.facebook.com/salem.gebru.1">ELM Sound Store</a>
+                </div>
+                <div class="col">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.instagram.com/salemsage637/">ELM Sound Store</a>
+                </div>
+                <div class="col">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/salemgebru/">ELM Sound Store</a>
+                </div>
+                <div class="col">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <a href="">ELM Sound Store</a>
+                </div>
+              </div>
+            </footer>
+            </section>
+
+            <script >
+        
+              function showSideBar(){
+                const sideBar=document.querySelector('.sidebar');
+              const mainBar=document.querySelector('.mainbar');
+                sideBar.style.display='flex'
+              }
+
+              function hideSideBar(){
+                const sideBar=document.querySelector('.sidebar');
+              const mainBar=document.querySelector('.mainbar');
+                sideBar.style.display='none' 
+              }
+
+            </script>
+        </body>
+      </html>

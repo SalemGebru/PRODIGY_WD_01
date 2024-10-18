@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Responsive landing page</title>
+    </head>
+
+    <body>
+        <section id="artistsPage">
+            <nav>
+              <ul class="sidebar">
+                <li onclick=hideSideBar() ><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="browse.html">BROWSE</a></li>
+                <li><a href="artistProfile.html">ARTIST PROFILES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+              </ul>
+
+              <ul class="mainbar">
+                <li class="hide"><a href="index.html">HOME</a></li>
+                <li class="hide"><a href="browse.html">BROWSE</a></li>
+                <li class="hide"><a href="artistProfile.html">ARTIST PROFILES</a></li>
+                <li class="hide"><a href="contact.html">CONTACT US</a></li>
+                <li onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+              </ul>
+              </nav>
+
+            <div class="cards">
+              <div class="card">
+                <div class="text">
+                  <h1 id="name-of-artist">Antonio Vivaldi (1678–1741)</h1>
+                  <p><strong>Renowned for: The Four Seasons</strong></p>
+                  <p>Antonio Vivaldi was an Italian Baroque composer, violinist, and priest, often recognized as one of the most influential composers of his time. He is best known for his concertos, especially for the violin,
+                     and is often associated with the Baroque style of
+                      music.Vivaldi's music has enjoyed a resurgence in 
+                      popularity since the 20th century, particularly with the revival of Baroque music. 
+                      His innovative use of melody, harmony, and form has made him a central figure in classical music history, and his works continue to be celebrated and performed worldwide.</p>
+                  <button onclick="location.href='https://en.wikipedia.org/wiki/Antonio_Vivaldi'">Learn more</button>
+                </div>
+                <img src="vivaldijpg.jpg">
+              </div>
+
+              <div class="card">
+                <div class="text">
+                  <h1 id="name-of-artist">Frédéric Chopin (1810–1849)</h1>
+                  <p><strong>Renowned for:Nocturnes, Études</strong></p>
+                  <p>Frédéric Chopin was a Polish composer and virtuoso pianist of the Romantic era, renowned for his solo piano compositions. His music is 
+                    characterized by its emotional depth and technical precision.
+                    Chopin's music remains a staple in the classical piano repertoire, celebrated for its beauty and emotional power. He is often regarded as one of the greatest composers for the piano, and his works continue to be performed and revered around the world.</p>
+                  <button onclick="location.href='https://en.wikipedia.org/wiki/Frédéric_Chopin'">Learn more</button>
+                </div>
+                <img src="chpoinpic.jpg">
+                </div>
+
+                <div class="card">
+                  <div class="text">
+                    <h1 id="name-of-artist">Johann Sebastian Bach(1685–1750)</h1>
+                    <p><strong>Renowned for:Brandenburg Concertos, The Well-Tempered Clavier</strong></p>
+                    <p>Johann Sebastian Bach was a German composer and musician of the Baroque period, widely regarded as one of the greatest composers in Western music history. His works are revered for their
+                      intellectual depth, technical command, and artistic beauty.Bach's music is celebrated for its complexity and emotional depth. His works are studied extensively in music theory and composition, and they remain a central part of the classical repertoire. His profound influence on music continues to resonate, making him a pivotal figure in the history of Western music.</p>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Johann_Sebastian_Bach'">Learn more</button>
+                  </div>
+                  <img src="bach.jpg">
+                </div>
+                  
+                <div class="card">
+                  <div class="text">
+                    <h1 id="name-of-artist">Ludwig van Beethoven(1770–1827)</h1>
+                    <p><strong>Renowned for:Symphony No. 5, Piano Sonatas</strong></p>
+                    <p>Ludwig van Beethoven was a German composer and pianist, pivotal in the transition between the Classical and Romantic eras in Western music. He is celebrated for his profound influence on the music that followed him and for his innovative compositions that 
+                      expanded the possibilities of musical expression.Beethoven's music is noted for its emotional intensity and complexity. His ability to convey human struggle and triumph has made him a symbol of artistic perseverance. He profoundly influenced the course of Western classical music, inspiring generations of composers and musicians. His works remain central to the concert repertoire and continue to resonate with audiences worldwide.</p>
+                    <button onclick="location.href='https://en.wikipedia.org/wiki/Ludwig_van_Beethoven'">Learn more</button>
+                  </div>
+                  <img src="beet.jpg">
+                </div>
+
+                <div class="card">
+                  <div class="text">
+                    <h1 id="name-of-artist">Pyotr Ilyich Tchaikovsky (1840–1893)</h1>
+                    <p><strong>Renowned for:Swan Lake, 1812 Overture</strong></p>
+                    <p>Pyotr Ilyich Tchaikovsky was a Russian composer of the Romantic era, known for his emotive melodies and innovative orchestration. He is one of the most 
+                      popular composers in the classical music repertoire.Tchaikovsky's music is known for its emotional expressiveness and lyrical melodies. His ability to convey deep feelings through orchestral music has made him a beloved figure in classical music. His works continue to be performed globally and remain influential
+                       in both concert and ballet repertoire.</p>
+                    <button onclick="location.href='https://zh.wikipedia.org/zh-tw/en:Pyotr_Ilyich_Tchaikovsky'">Learn more</button>
+                  </div>
+                  <img src="tcha.jpg">
+                </div>
+
+                <div class="card">
+                  <div class="text">
+                    <h1 id="name-of-artist">Wolfgang Amadeus Mozart (1756–1791)</h1>
+                    <p><strong>Renowned for:The Magic Flute, Requiem</strong></p>
+                    <p>Wolfgang Amadeus Mozart was an Austrian composer and one of the most prolific and influential figures in the history of Western classical music. His works are known for their melodic beauty, formal elegance, and emotional depth.
+                      Mozart's music is characterized by its clarity, balance, and transparency. His works have had a lasting impact on music theory and composition. He is often regarded as one of the greatest composers in Western music history, and his compositions continue to be performed, studied, and celebrated around the world.
+                    </p>
+                    <button onclick="location.href='https://zh.wikipedia.org/zh-cn/en:Wolfgang_Amadeus_Mozart'">Learn more</button>
+                  </div>
+                  <img src="mozart.jpg">
+                </div>
+            </div>
+
+            <footer>
+              <h2>FOLLOW US</h2>
+              <div class="row">
+                <div class="col">
+                  <i class="fa-brands fa-facebook"></i>
+                <a href="https://web.facebook.com/salem.gebru.1">ELM Sound Store</a>
+                </div>
+                <div class="col">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.instagram.com/salemsage637/">ELM Sound Store</a>
+                 </div>
+                <div class="col">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://www.linkedin.com/in/salemgebru/">ELM Sound Store</a>
+                </div>
+                <div class="col">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <a href="">ELM Sound Store</a>
+                </div>
+              </div>
+            </footer>
+            </section>
+
+            <script >
+        
+              function showSideBar(){
+                const sideBar=document.querySelector('.sidebar');
+              const mainBar=document.querySelector('.mainbar');
+                sideBar.style.display='flex'
+              }
+
+              function hideSideBar(){
+                const sideBar=document.querySelector('.sidebar');
+              const mainBar=document.querySelector('.mainbar');
+                sideBar.style.display='none'
+              }
+
+            </script>
+          </body>
+        </html>
+            

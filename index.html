@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Copse&family=Young+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Responsive landing page</title>
+    </head>
+
+    <body>
+
+        <section id="homePage">
+          <nav>
+            <ul class="sidebar">
+              <li onclick=hideSideBar() ><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="browse.html">BROWSE</a></li>
+              <li><a href="artistProfile.html">ARTIST PROFILES</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+            <ul class="mainbar">
+              <li class="hide"><a href="index.html">HOME</a></li>
+              <li class="hide"><a href="browse.html">BROWSE</a></li>
+              <li class="hide"><a href="artistProfile.html">ARTIST PROFILES</a></li>
+              <li class="hide"><a href="contact.html">CONTACT US</a></li>
+              <li onclick=showSideBar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+          </nav>
+
+          <div class="pageTitle">
+            <div class="col">
+              <h1>ELM'S SOUND STUDIO</h1>
+              <p>Where Timeless Music Lives, Resounding Through the Ages </p>
+            </div>
+            <img src="grampahone-removebg-preview.png" alt="gramaphone">
+          </div>
+
+          <div class="sampleMusic">
+            <h2>DISCOVER YOUR FAVORITE MUSIC IN ONE PLACE.</h2>
+            <div class="row">
+              <div class="col">
+                <h2>Chopin_Etude_Op_10_No_3_in_E_Major</h2>
+                <p>Lang Lang Plays,Berlin Philharmonic </p>
+              </div>
+              <div class="sheet">
+                <img src="chpoinpic.jpg" id="picture">
+                <audio controls>
+                  <source src="Lang_Lang_plays_Chopin_Etude_Op_10_No_3_in_E_Major.mp3" type="audio/mpeg">
+                </audio>
+              </div>   
+            </div>
+          </div>
+
+          <footer>
+            <h2>FOLLOW US</h2>
+            <div class="row">
+              <div class="col">
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://web.facebook.com/salem.gebru.1">ELM Sound Store</a>
+            </div>
+              <div class="col">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/salemsage637/">ELM Sound Store</a>
+              </div>
+              <div class="col">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/salemgebru/">ELM Sound Store</a>
+              </div>
+              <div class="col">
+                <i class="fa-brands fa-whatsapp"></i>
+                <a href="">ELM Sound Store</a>
+              </div>
+            </div>  
+          </footer>
+        </section>
+
+      <script >
+
+        function showSideBar(){
+          const sideBar=document.querySelector('.sidebar');
+        const mainBar=document.querySelector('.mainbar');
+          sideBar.style.display='flex'
+        }
+
+        function hideSideBar(){
+          const sideBar=document.querySelector('.sidebar');
+        const mainBar=document.querySelector('.mainbar');
+          sideBar.style.display='none' 
+        }
+
+      </script>
+
+    </body>
+</html>
